@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+a { 
+    text-decoration: none;
+} 
+a:hover{ 
+    text-decoration: none;
+} 
+i {
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 25px;
+    opacity: 0;
+    cursor: pointer;
+}
+body{
+    background: url(./img/urok_anatomii.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    width: 100%;
+    background: #000000;
+    padding: 9px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+nav a {
+    color: #dbdbdb;
+    margin: 0 5px;
+}
+nav {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+footer {
+    background-color: #000;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer img{
+    padding: 20px;
+}
+main {
+    max-width: 70%;
+    margin: 30px auto;
+}
+.intro {
+    margin: 50px 0;
+}
+img {
+    max-width: 100%;
+}
+hr {
+    margin: 30px;
+}
+h2 {
+    margin: 20px 0;
+}
+h1{
+    font-size: 50px;
+}
+article {
+    margin-bottom: 100px;
+}
+
+
+@media(max-width: 850px){
+    h1{
+        font-size: 30px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        padding: 0px;
+        height: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .menu nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: -300px;
+        margin: 0 auto;
+    }
+    #open{
+        opacity: 1;
+    }
+}
